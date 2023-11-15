@@ -24,7 +24,7 @@ const Features = () => {
         </h2>
       </div>
 
-      <div className="grid grid-cols-3 gap-3  p-4 mt-4">
+      <div className="grid grid-cols-3 gap-5  p-4 mt-4">
         {features.slice(0, showAll ? 12 : 6).map((feature) => (
           <FeatureItem key={feature.id} feature={feature}></FeatureItem>
         ))}

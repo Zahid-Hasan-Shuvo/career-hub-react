@@ -5,7 +5,7 @@ const FeatureItem = ({feature}) => {
     const {logo,job_title,company_name,remote_or_onsite,location,job_type,salary,job_description,job_responsibility,educational_requirements,experiences,contact_information}=feature;
     return (
       <div>
-          <div className='border mx-auto w-80 h-64 text-center hover:shadow-lg rounded'>
+          <div className='border mx-auto w-80 h-72 text-center hover:shadow-lg rounded'>
             <img className='ml-24 mt-7 w-32' src={logo} alt="" />
             <p className='font-bold mt-2'>{job_title}</p>
             <p className='mt-2'>{company_name}</p>
