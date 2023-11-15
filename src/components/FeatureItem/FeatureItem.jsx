@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const FeatureItem = ({feature}) => {
-    const {logo,job_title,company_name,remote_or_onsite,location,job_type,salary,job_description,job_responsibility,educational_requirements,experiences,contact_information}=feature;
+    const {id, logo,job_title,company_name,remote_or_onsite,location,job_type,salary,job_description,job_responsibility,educational_requirements,experiences,contact_information}=feature;
     return (
       <div>
           <div className='border mx-auto w-80 h-72 text-center hover:shadow-lg rounded'>
@@ -15,7 +15,7 @@ const FeatureItem = ({feature}) => {
           <p className=' mr-5 mt-2'>{location}</p>
             <p className='mt-2'>{salary}</p>
           </div>
-           <Link><button className='border p-2 text-white bg-indigo-700 font-semibold rounded mt-2'>View Details</button></Link>
+           <Link to={`/feature/${id}`}><button className='border p-2 text-white bg-indigo-700 font-semibold rounded mt-2'>View Details</button></Link>
         </div>
        
       </div>

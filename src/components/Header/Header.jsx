@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="flex justify-around items-center sticky top-0 " >
+    <div className="flex justify-around items-center  " >
 
 
   <Link to='/'>  <h2 className="text-3xl font-bold" >CareerHub</h2></Link>
@@ -12,6 +12,12 @@ const Header = () => {
 {/* ///////////////////// */}
 
 <div className="flex justify-evenly items-center ">
+<span className="pr-9 font-semibold"> <NavLink
+        to="/"
+        className={({ isActive }) => (isActive ? "text-pink-700" : "")}
+      >
+       Home
+      </NavLink></span>
 
      <span className="pr-9 font-semibold"> <NavLink
         to="/statistics"
