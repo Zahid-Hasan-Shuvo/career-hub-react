@@ -3,7 +3,7 @@ import logo from '../../assets/icons/social.png'
 
 const Footer = () => {
     return (
-        <div className='grid grid-cols-5 gap-3 mt-7 bg-black rounded p-16 w-auto '>
+        <div className='grid grid-cols-5 gap-3 mt-7 bg-black rounded py-12 px-6 w-auto '>
             <div className='text-white' >
              <h2 className='font-bold text-white mb-4'>CareerHub</h2>
              <p className='text-zinc-400 mb-3'> There are many variations of passage of Uses. But the majority have suffered alternation in some form  </p>

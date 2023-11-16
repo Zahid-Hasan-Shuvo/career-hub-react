@@ -28,7 +28,7 @@ const Header = () => {
     
   
      <span className="pr-5 font-semibold"> <NavLink
-        to="/applied-jobs"
+        to="/applied"
         className={({ isActive }) => (isActive ? "text-pink-700" : "")}
       >
      Applied Jobs
