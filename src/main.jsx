@@ -13,6 +13,7 @@ import Jobs from './components/Jobs/Jobs.jsx';
 import Blog from './components/Blog/Blog.jsx';
 import FeaturesDetails from './components/FeaturesDetails/FeaturesDetails.jsx';
 import AppliedJobs from './components/AppliedJobs/AppliedJobs.jsx';
+import NotFound from './components/NOTFound/NotFound.jsx';
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,11 @@ const router = createBrowserRouter([
      
     ]
   },
+
+  {
+    path: '*',
+    element: <NotFound></NotFound>
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
